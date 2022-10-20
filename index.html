@@ -4,7 +4,9 @@
 		<meta name='discription' content=''>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Reservoirs</title>
+		<title>Reservoir-Fluid-props </title>
+		<link rel="icon" type="image/x-icon" href="goutteimage.jpg">
+
 		<!--
 		<script src="javascript.js"></script>
 		<link rel="stylesheet" href="style.css">
@@ -13,13 +15,26 @@
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		
 		
-		<style></style>
+		<style>
+			.list-group-item {
+				padding-left: 3px;
+			}
+
+			nav li a {
+				text-align: center;
+			}
+
+			.custom-select option:hover:not(.firstcomponent) {
+
+				background-color: aquamarine;
+
+			}
+		</style>
 		<script></script>
 	</head>
 
 	<body style="background-color: rgba(152, 153, 155, 0.205);">
 
-				
 				<!--		
 		           <a style="display: block;">
 			         <img src="goutteimage.jpg" style="border-radius: 50%; height:35px; width: 25px;" alt="PVT Pur">
@@ -39,7 +54,7 @@
 					  <ul class="navbar-nav me-auto mb-2 mb-lg-0">	
 						
 					  <li style="border-right: 1px white solid;" class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Properties of <br> Pur Components</a>
+						<a class="nav-link active" aria-current="page" href="#">Properties of <br> Pure Components</a>
 					  </li>
 					  
 					  <li style="border-right: 1px white solid;" class="nav-item dropdown">
@@ -61,34 +76,98 @@
 
 				  <div style="color: aliceblue !important; padding:6px ;">
 					<button class="btn btn-outline-success me-2" type="button">
-					  <a style="color:green; font-weight:700" class="nav-link" href="https://www.linkedin.com/in/djilali-benamar-49ba231a4/" target="_blank">Contact Me</a>
+					  <a style="color:green; font-weight:700" class="nav-link" href="https://www.linkedin.com/in/djilali-benamar-49ba231a4/" target="_blank">Contact</a>
 				    </button> 
 					 
 				  </div>
                   </div>
 				
-		  </nav>
-
-		
-
-
-
-
+		</nav>
+<!-- ...... -->
+<p style="text-align: center; background-color: aliceblue;color: green; font-weight: 100;">Open to work in the Petroleum Engineering Sector</p>
 
 <!-- ...... -->
 
-<div style="margin-top: 50px;" id="content">
-		<div style='color:red'>Estimate Thermodynamic Properties for Pur Components:<br> 
-			<ul>The essential Properties are:
-				<li>P<sub>c</sub></li>
-				<li>T<sub>c</sub></li>
-				<li>V<sub>c</sub></li>
-				<li>Z<sub>c</sub></li>
-				<li>w</li>
-				<li>M</li>
-			</ul> 
-		</div>
+<container >
 
+<div class="card border-secondary mb-3" style="box-shadow:1px 1px 8px black;float:left;max-width: 42%;min-width: 18rem;height: 548px; margin: 15px; margin-top: 20px;margin-bottom: 5px; background-color: #ddd;">
+	<img style="width: 25%; height: 70px; display: block;margin: auto;" src="goutteimage.jpg" class="card-img-top" alt="OIL AND GAS">
+	<div class="card-body">
+	  <h5 style="text-align: center;" class="card-title">Thermodynamic Properties of Pure Components:</h5>
+	  <p class="card-text"></p>
+	</div>
+	<ul  class="list-group list-group-flush">
+	  <li class="list-group-item"> <p style="float: left; margin: 0%;"> The critical pressure</p> <p style="float: right; margin: 0%; font-weight: 900;"> P<sub>c</sub></p> </li>
+	  <li class="list-group-item"> <p style="float: left; margin: 0%;"> The critical temperature</p> <p style="float: right; margin: 0%;font-weight: 900;">T<sub>c</sub></p></li>
+	  <li class="list-group-item"> <p style="float: left; margin: 0%;">The boiling point temperature </p> <p style="float: right; margin: 0%;font-weight: 900;">T<sub>b</sub></p></li>
+	  <li class="list-group-item"> <p style="float: left; margin: 0%;">The critical volume </p> <p style="float: right; margin: 0%;font-weight: 900;">V<sub>c</sub></p></li>
+	  <li class="list-group-item"> <p style="float: left; margin: 0%;">The critical compressibility-factor</p> <p style="float: right; margin: 0%;font-weight: 900;">Z<sub>c</sub></p></li>
+	  <li class="list-group-item"> <p style="float: left; margin: 0%;">The acentric factor</p> <p style="float: right; margin: 0%;font-weight: 900;"> w</p></li>
+	  <li class="list-group-item"> <p style="float: left; margin: 0%;">The molecular weight</p> <p style="float: right; margin: 0%;font-weight: 900;">M </p></li>
+	</ul>
+  </div>
+
+<!-- ...... -->
+
+<div class="card border-secondary mb-3" style="box-shadow:1px 1px 8px black;float:right;max-width: 42%;min-width: 18rem; margin: 15px; margin-top: 20px;margin-bottom: 5px; background-color: #ddd;">
+	<select class="custom-select" size="3" style="text-align: center;" id='component'> 
+		<option class="firstcomponent" disabled style="font-weight: 900;font-style: italic;background-color: aqua;"> Select the Element</option>
+		<option >C1</option>
+		<option >C2</option>
+		<option >C3</option>
+		<option >C4</option>
+		<option >C5</option>
+		<option>C6</option>
+		<option>C7</option>
+		<option>C8</option>
+		<option>C9</option>
+		<option>C10</option>
+		<option>C11</option>
+		<option>C12</option>
+		<option>C13</option>
+		<option>C14</option>
+		<option>C15</option>
+		<option>C16</option>
+		<option>C17</option>
+		<option>C18</option>
+		<option>C19</option>
+		<option>C20</option>
+		<option>C21</option>
+
+   </select> 
+	   <div class="card-body">
+	  <p style="text-align: center; text-justify:auto; margin:0%;" class="card-title">Using the molecular weight and the specific gravity in "Riazi and Daubert" equation. We could obtain the following calculations:</p>
+	  <p class="card-text"></p>
+	</div>
+	<ul id="properties"  class="list-group list-group-flush">
+	  <li class="list-group-item"> <input type="text" id="criticalPressure" placeholder="Critical Pressure"> 
+		                           <p style="float: right; margin: 0%; font-weight: 900;"> P<sub>c</sub> [psia]</p> 
+								   </li>
+	  <li class="list-group-item"> <input type="text" id="criticalTemperature" placeholder="Critical Temperature"> 
+		                           <p style="float: right; margin: 0%;font-weight: 900;">T<sub>c</sub> [°R]</p>
+								   </li>
+	  <li class="list-group-item"> <input type="text" id="boilingPoint" placeholder="Boiling Point"> 
+		                           <p style="float: right; margin: 0%;font-weight: 900;">T<sub>b</sub> [°R]</p>
+								   </li>
+	  <li class="list-group-item"> <input type="text" id="criticalVolume" placeholder="Critical Volume"> 
+		                           <p style="float: right; margin: 0%;font-weight: 900;">V<sub>c</sub> [ft3/lb]</p>
+								</li>
+	  <li class="list-group-item">  <input type='text' placeholder='Critical Compressibillity' id= 'zCritical'>
+		                            <p style="float: right; margin: 0%;font-weight: 900;">Z<sub>c</sub> </p>
+								</li>
+	  <li class="list-group-item"> <input type='text' id='acentric' placeholder='Acentric Factor'>
+		                         <p style="float: right; margin: 0%;font-weight: 900;"> w </p>
+								</li>
+	</ul>
+  </div>
+
+  <div style="clear: both;"></div>
+</container>
+<!-- calculation by indexing ...... 
+
+
+
+<div style="margin-top: 50px;" id="content">
 
 		<div>
 		   <p>
@@ -99,28 +178,11 @@
         </div>
              <br>or<br> Would you extract the values of the element contained in from a tabulated list?  <button>Yes Extract the values</button> 
              <select id='component'> 
-             	 <option></option>
+             	 <option value=""></option>
              	 <option value='16'>C1</option>
              	 <option value='30'>C2</option>
              	 <option value='44'>C3</option>
              	 <option value='58'>C4</option>
-             	 <option>C5</option>
-             	 <option>C6</option>
-             	 <option>C7</option>
-             	 <option>C8</option>
-             	 <option>C9</option>
-             	 <option>C10</option>
-             	 <option>C11</option>
-             	 <option>C12</option>
-             	 <option>C13</option>
-             	 <option>C14</option>
-             	 <option>C15</option>
-             	 <option>C16</option>
-             	 <option>C17</option>
-             	 <option>C18</option>
-             	 <option>C19</option>
-             	 <option>C20</option>
-             	 <option>C21</option>
 
              </select> 
              <input type='text' value='' placeholder='Mollecular weight value'> <input type='text' value='' placeholder='Specific Gravity value'>
@@ -146,77 +208,27 @@
 		   <br> <input type='text' id='acentric' placeholder='acentric factor'> <br>The critical compressibility factor (z<sub>c</sub>) will be calculated by two methods:<br>
 		   &nbsp;&nbsp;&nbsp; z = (P<sub>c</sub>V<sub>c</sub>M)/(RT<sub>c</sub>)
 		   <br> Or by Salermo and Al estimation: z = 0.291 - 0.080w - 0.016w<sup>2</sup> <br>
-		   <input type='text' placeholder='Critical 	Compressibillity factor' id= 'zCritical'>
+		   <input type='text' placeholder='Critical Compressibillity factor' id= 'zCritical'>
 		   </p> 
 		</div>
 
 </div>
+-->
 
-
-
-    <script> 
-
-         
-         var mollecular = [16, 30, 44, 50],
-             gravity = [1, 1, 1, 1],
-             constants = [[544.4, 0.2998, 1.0555, -0.00013478, -0.61641, 0],
-                          [45203, -0.8063, 1.6015, -0.0018078, -0.3084, 0],
-                          [0.01206, 0.20378, -1.3036, -0.002657, 0.5287, 0.0026012],
-                          [6.77857, 0.401673, -1.58262, 0.00377409, 2.984036, -0.00425288]];
-
-
-
-document.getElementById('component').onchange = function () {
-
-	var mollecularIndex = document.getElementById('component').selectedIndex - 1,
-		    propertyIndex = document.getElementById('riaziProperty').selectedIndex-1;
-
-     var acentricFactor = document.getElementById('acentric'),
-    zCritical = document.getElementById('zCritical'),
-    pcValue =constants[1][0]*(Math.pow(mollecular[mollecularIndex], constants[1][1]))*Math.pow(gravity[mollecularIndex], constants[1][2])*Math.exp(constants[1][3]*mollecular[mollecularIndex] + constants[1][4]*gravity[mollecularIndex] + constants[1][5]*mollecular[mollecularIndex]*gravity[mollecularIndex]),
-
-    tcValue = constants[0][0]*(Math.pow(mollecular[mollecularIndex], constants[0][1]))*Math.pow(gravity[mollecularIndex], constants[0][2])*Math.exp(constants[0][3]*mollecular[mollecularIndex] + constants[0][4]*gravity[mollecularIndex] + constants[0][5]*mollecular[mollecularIndex]*gravity[mollecularIndex]),
-
-    tbValue = constants[3][0]*(Math.pow(mollecular[mollecularIndex], constants[3][1]))*Math.pow(gravity[mollecularIndex], constants[3][2])*Math.exp(constants[3][3]*mollecular[mollecularIndex] + constants[3][4]*gravity[mollecularIndex] + constants[3][5]*mollecular[mollecularIndex]*gravity[mollecularIndex]),
-    vcValue = constants[2][0]*(Math.pow(mollecular[mollecularIndex], constants[2][1]))*Math.pow(gravity[mollecularIndex], constants[2][2])*Math.exp(constants[2][3]*mollecular[mollecularIndex] + constants[2][4]*gravity[mollecularIndex] + constants[2][5]*mollecular[mollecularIndex]*gravity[mollecularIndex]);
-
-acentricFactor.value = 3*(Math.log(pcValue/14.7))/(7*(tcValue/(tbValue-1))) - 1;
-
-zCritical.value = (pcValue*vcValue*mollecular[mollecularIndex])/(10.73*tcValue);
-
-           
-
-	    if (mollecularIndex >=0 && propertyIndex>=0) {
-
-		
-           document.getElementById('propertyResult').value = constants[propertyIndex][0]*(Math.pow(mollecular[mollecularIndex], constants[propertyIndex][1]))*Math.pow(gravity[mollecularIndex], constants[propertyIndex][2])*Math.exp(constants[propertyIndex][3]*mollecular[mollecularIndex] + constants[propertyIndex][4]*gravity[mollecularIndex] + constants[propertyIndex][5]*mollecular[mollecularIndex]*gravity[mollecularIndex]);
-       }
-
-       else {document.getElementById('propertyResult').value = 'select the element';}
-
-	}
-
-
-document.getElementById('riaziProperty').onchange = function () {
-
-			var mollecularIndex = document.getElementById('component').selectedIndex - 1,
-		    propertyIndex = document.getElementById('riaziProperty').selectedIndex-1;
-           
-
-		    if(mollecularIndex >=0 && propertyIndex>=0) {
-
-		
-           document.getElementById('propertyResult').value = constants[propertyIndex][0]*(Math.pow(mollecular[mollecularIndex], constants[propertyIndex][1]))*Math.pow(gravity[mollecularIndex], constants[propertyIndex][2])*Math.exp(constants[propertyIndex][3]*mollecular[mollecularIndex] + constants[propertyIndex][4]*gravity[mollecularIndex] + constants[propertyIndex][5]*mollecular[mollecularIndex]*gravity[mollecularIndex]);
-
-	}
-
-	else {document.getElementById('propertyResult').value='Select the Elements';}
-
-}
-
-
-</script>
-
+<script src="calculations.js"></script>    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
 </body>
+
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+  
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2022 Copyright:
+	  <a target="_blank" href="https://www.linkedin.com/in/djilali-benamar-49ba231a4/"> Engr.BENAMAR</a><br>
+	</div>
+
+	<!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
